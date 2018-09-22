@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Its A Sample Page</h1>
+
+{% for class_name in defined_argument %}
+
+    <div>
+        <h3><a href="/post/{{ class_name.variiable_from_model_which_make_link }}">{{ class_name.Variable_which_we_want_to_show }}</a></h3>
+        <p>{{ class_name.variable_we_want_to_show }}</p>
+    </div>
+
+{% endfor %}
+
+{% endblock %}
